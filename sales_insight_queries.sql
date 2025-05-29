@@ -44,6 +44,12 @@ WHERE Discount > 10;
 SELECT * FROM Sales 
 WHERE SaleDate BETWEEN '2023-01-01' AND '2023-06-30'
 
+-- 13. Calculate average discount given in sales:
+SELECT AVG(Discount) AS AverageDiscount FROM Sales;
+
+-- 14. Find max quantity sold in a single sale:
+SELECT MAX(Quantity) AS MaxQuantity FROM Sales;
+
 
 
 

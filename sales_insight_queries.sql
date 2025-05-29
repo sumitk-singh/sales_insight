@@ -30,6 +30,20 @@ GROUP BY Category;
 SELECT * FROM Products 
 WHERE UnitPrice > 5000;
 
+-- 9.Count total sales transactions:
+SELECT COUNT(*) AS TotalSales FROM Sales;
+
+-- 10. Calculate total quantity sold:
+SELECT SUM(Quantity) AS TotalQuantitySold FROM Sales;
+
+-- 11. Find sales with discounts greater than 10%:
+SELECT * FROM Sales 
+WHERE Discount > 10;
+
+-- 12. Find sales between two dates '2023-01-01' and '2023-06-30';
+SELECT * FROM Sales 
+WHERE SaleDate BETWEEN '2023-01-01' AND '2023-06-30'
+
 
 
 

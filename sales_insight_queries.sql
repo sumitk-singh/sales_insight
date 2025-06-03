@@ -50,10 +50,10 @@ SELECT AVG(Discount) AS AverageDiscount FROM Sales;
 -- 14. Find max quantity sold in a single sale:
 SELECT MAX(Quantity) AS MaxQuantity FROM Sales;
 
--- Show each customer's name along with the region they belong to.
 
+
+-- 15. List all customers with their region name (Customers + Regions)
 
 	select c.Name as customer_name, r.RegionName as region_name from Customers c
 	join Regions r on c.RegionID = r.RegionID
-	
 

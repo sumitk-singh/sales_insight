@@ -58,7 +58,7 @@ SELECT MAX(Quantity) AS MaxQuantity FROM Sales;
 	join Regions r on c.RegionID = r.RegionID
 
 -- 16. List all sales with customer name and product name (Sales + Customers + Products)
-	select s.SaleID as sales_id, c.Name as customer_name, p.ProductName as product_name from Sales s
+	select s.SaleID, s.SaleDate, c.Name, c.Email, p.ProductName, p.Category, p.UnitPrice from Sales s
 	inner join Customers c on s.CustomerID = c.CustomerID
-	inner join Products p on s.ProductID = p.ProductID;
+	inner join Products p on s.ProductID = p.ProductID
 
